@@ -1,0 +1,167 @@
+<html>
+  <head>
+    <style>
+      .myHeading {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+      <P>Exercise 1</P>
+    <h1 id= 'id01'>Old Title</h1>
+    <p>Click on the button to change the page title to: 'New Title'</p>
+    <button onclick="changePageTitle()">Change Page Title</button>
+    
+    <script> 
+        function changePageTitle() {
+            document.getElementById('id01').innerText = 'New Title'
+        }
+    </script>
+
+    <main>
+      <hr />
+      <p>Exercise 5</p>
+
+      <ul id="firstList">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+      </ul>
+
+      
+      <ul id="secondList">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+      </ul>
+
+      <p>Click the button to add a number to the end of the list.</p>
+      <button onclick="myFunction()">Add Number</button>
+
+      <script>
+          function myFunction() {
+              let node = document.createElement("LI");
+              let textnode = document.createTextNode("4th");
+              node.appendChild(textnode);
+              document.getElementById("secondList").appendChild(node);
+}
+      </script>
+
+      <div>
+        <p>I have a challenge</p>
+        <p>Click on the button to change this text!</p>
+        <button onclick="changeText()">Change Text</button>
+      </div>
+      <script>
+          function changeText() {
+              document.querySelector('div .p').innerText = 'I need help understanding functions, inputs & Events'
+          }
+      </script>
+
+    <footer>
+        <p>Exercise 10</p>
+        <p id='id02'>OLD FOOTER</p>
+      <p>Click on the button to change the footer Text to: 'NEW FOOTER'</p>
+      <button onclick="changeFooterText()">Change Footer Text</button>
+
+      <script>
+          function changeFooterText() {
+              document.getElementById('id02').innerText = 'NEW FOOTER'
+          }
+      </script>
+    </footer>
+
+    <script>
+        /* EXERCISE 2
+        Write a function for changing the class of the title of the page in "myHeading".
+        */
+    
+        const addClassToTitle = function () {
+          //
+        };
+    
+        /* EXERCISE 3
+        Write a function for changing the text of only the p which are children of a div.
+        */
+    
+        const changePcontent = function () {
+          //
+        };
+    
+        /* EXERCISE 4
+        Write a function for changing the destination of every link to https://www.google.com
+        */
+    
+        const changeUrls = function () {
+          //
+        };
+    
+        /* EXERCISE 5
+         Write a function for adding a new item in the second list.
+         */
+    
+        const addToTheSecond = function (content) {
+          //
+        };
+    
+        /* EXERCISE 6
+        Write a function for adding a second paragraph to the div.
+        */
+    
+        const addParagraph = function (content) {
+          //
+        };
+    
+        /* EXERCISE 7
+        Write a function for making the first UL disappear.
+        */
+    
+        const firstUlDisappear = function () {
+          //
+        };
+    
+        /* EXERCISE 8
+        Write a function for making the background of every UL green.
+        */
+    
+        const paintItGreen = function () {
+          //
+        };
+    
+        /* EXERCISE 9
+        Make the heading of the page change color every time the user clicks on it.
+        */
+    
+        const makeItClickable = function () {
+          //
+        };
+    
+        /* EXERCISE 10
+        Change the footer text with something else when the user clicks on it.
+        */
+    
+        const changeFooterText = function () {
+          //
+        };
+    
+        /* EXERCISE 11
+        Attach an event listener to the input field in the page for console logging its value just after any keystroke.
+        */
+    
+        const inputField = document.getElementById("input-field");
+        // ...
+    
+        /* EXERCISE 12
+        Create a new welcome alert message when the page successfully loads.
+        */
+    
+        window.onload = function () {
+          //
+        };
+    
+        /* EXERCISE 13
+        Use HTML5 tags to divide the content of the page in a more semantic way.
+        */
+      </script>
+  </body>
+</html>
